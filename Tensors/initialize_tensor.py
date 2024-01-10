@@ -15,3 +15,10 @@ print(f"Ones Tensor: \n {x_ones} \n")
 
 x_rand = torch.rand_like(x_data, dtype=torch.float) # overrides the datatype of x_data
 print(f"Random Tensor: \n {x_rand} \n")
+
+#Tensor attributes
+tensor = torch.rand(3,4)
+
+print(f"Shape of tensor: {tensor.shape}")
+print(f"Datatype of tensor: {tensor.dtype}")
+print(f"Device tensor is stored on: {tensor.device}")
