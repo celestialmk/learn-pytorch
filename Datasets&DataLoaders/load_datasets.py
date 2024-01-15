@@ -5,7 +5,7 @@ from torchvision.transforms import ToTensor
 import matplotlib.pyplot as plt
 from torch.utils.data import DataLoader
 
-
+#load training dataset
 training_data = datasets.FashionMNIST(
     root="data",
     train=True,
@@ -13,6 +13,7 @@ training_data = datasets.FashionMNIST(
     transform=ToTensor()
 )
 
+#create test dataset
 test_data = datasets.FashionMNIST(
     root="data",
     train=False,
